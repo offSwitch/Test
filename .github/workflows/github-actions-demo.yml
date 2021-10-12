@@ -24,6 +24,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          platforms: linux/amd64
           tags: |
             ttkforit/kfserving-storage-initializer:latest
