@@ -1,1 +1,2 @@
+ARG IMAGE_URL
 from ${IMAGE_URL}
