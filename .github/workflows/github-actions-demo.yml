@@ -21,3 +21,4 @@ jobs:
           push: true
           tags: |
             ttkforit/kube-state-metrics:v2.2.4
+          build-args: IMAGE_URL=k8s.gcr.io/prometheus-adapter/prometheus-adapter:v0.9.1
