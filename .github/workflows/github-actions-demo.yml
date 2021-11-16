@@ -25,4 +25,4 @@ jobs:
         with:
           push: true
           tags: |
-            ttkforit/kube-state-metrics:2.2.4
+            ttkforit/kube-state-metrics:v2.2.4
