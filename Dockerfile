@@ -1,1 +1,1 @@
-from gcr.io/kfserving/storage-initializer:v0.4.0
+from k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.2.4
