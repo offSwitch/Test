@@ -20,5 +20,5 @@ jobs:
         with:
           push: true
           tags: |
-            ttkforit/prometheus-adapter:v0.9.1
-          build-args: IMAGE_URL=k8s.gcr.io/prometheus-adapter/prometheus-adapter:v0.9.1
+            ttkforit/kube-vip:v0.4.0
+          build-args: IMAGE_URL=ghcr.io/kube-vip/kube-vip:v0.4.0
