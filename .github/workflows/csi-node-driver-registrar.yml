@@ -1,4 +1,4 @@
-name: ci
+name: csi-node-driver-registrar
 on:
   workflow_dispatch
 jobs:
