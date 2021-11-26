@@ -1,0 +1,24 @@
+name: ingress-nginx-controller
+on:
+  workflow_dispatch
+jobs:
+  build-and-deploy-image:
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取master分支
+      - name: Checkout
+        uses: actions/checkout@master
+      # 登陆dockerhub
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+      # 编译并且推送到dockerhub
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: |
+            ttkforit/ingress-nginx-controller:v1.1.0
+          build-args: IMAGE_URL=k8s.gcr.io/ingress-nginx/controller:v1.1.0
