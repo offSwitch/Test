@@ -20,5 +20,5 @@ jobs:
         with:
           push: true
           tags: |
-            ttkforit/nfs-subdir-external-provisioner:v4.0.2
-          build-args: IMAGE_URL=k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
+            ttkforit/kube-state-metrics:v2.2.3
+          build-args: IMAGE_URL=k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.2.3
