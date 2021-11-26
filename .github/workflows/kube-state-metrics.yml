@@ -1,4 +1,4 @@
-name: ci
+name: kube-state-metrics
 on:
   workflow_dispatch
 jobs:
