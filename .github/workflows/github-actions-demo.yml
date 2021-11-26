@@ -20,5 +20,5 @@ jobs:
         with:
           push: true
           tags: |
-            ttkforit/kube-vip:v0.4.0
-          build-args: IMAGE_URL=ghcr.io/kube-vip/kube-vip:v0.4.0
+            ttkforit/nfs-subdir-external-provisioner:v4.0.2
+          build-args: IMAGE_URL=k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
